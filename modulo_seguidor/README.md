@@ -1,28 +1,22 @@
 # Modulo Seguidor
 
-Este módulo se encarga de ejecutar las funciones propias de un seguidor de línea, procesar las lecturas del módulo sensor y dirigir los motores.
+Este módulo ejecuta las funciones propias de un seguidor de línea, procesar las lecturas del módulo sensor, e integra el puente H L298N para dirigir los motores.
 
 <img src="front_preview.png" width=100%>
 
 Vista previa de la placa desde arriba
 
-## Referencia
+<img src="back_preview.png" width=100%>
 
-Para el diseño en kicad se realizó una configuración para editar la placa como si se editara una placa perforada.
+Vista previa de la placa desde abajo
 
-<img src="referencia_perfboard.png" width=100%>
+## Diagrama
 
-Las marcas de cruces representan los agujeros de la placa perforada.
-Las zonas sombreadas en los bordes tienen 5mm de ancho y representan la parte que no tiene agujeros en la placa perforada.
-Si no se puede acomodar el componente se presiona CTRL mientras se arrastra para hacer un ajuste fino.
+El diseño está pensado para hacer la PCB de un solo lado, por lo que las pistas rojas tendrán que reemplazarse con cables.
 
-Más información al respecto en [foro de arduino](https://forum.arduino.cc/t/perfboard-circuit-design-with-kicad/1283999)
+<img src="modulo_seguidor.svg" width=100%>
 
 ## TODOs
- - ~~Revisar las medidas de la placa (tomar en cuenta los bordes de la placa que no tienen agujeros)~~
  - Revisar los footprints de las resistencias y de los capacitores
- - Hacer espacio para la ruedita omnidireccional
- - ~~Acomodar los componentes y hacer las conexiones~~
  - Exportar a un modelo 3D (opcional)
- - Probar en placa separada el modulo puente H
- - Reemplazar conexiones de cables por housings
+ - ~~Probar en placa separada el modulo puente H~~
