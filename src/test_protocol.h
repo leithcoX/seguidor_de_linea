@@ -1,4 +1,4 @@
-#include "protocol.h"
+#include "bl_protocol.h"
 
 // -----------------------------------------------------------------------
 // Test del protocolo usando el Serial Monitor en vez del HM10.

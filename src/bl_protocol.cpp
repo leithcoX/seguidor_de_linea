@@ -1,7 +1,7 @@
 #include <stdlib.h>  // atof, strtol
 #include <string.h>  // strlen, strchr
 
-#include "protocol.h"
+#include "bl_protocol.h"
 
 // -----------------------------------------------------------------------
 // Estado interno del buffer de linea

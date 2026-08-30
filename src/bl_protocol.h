@@ -1,6 +1,9 @@
 #ifndef __BL_PROTOCOL_H__
 #define __BL_PROTOCOL_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 typedef enum {
     MODE_LINE_FOLLOWER = 0,  // PID automatico
     MODE_MANUAL = 1          // controlado desde el celular
@@ -33,13 +36,7 @@ typedef struct {
     uint16_t rate_ms;     // valido si type == CMD_SET_RATE
 } command_t;
 
-static char s_buffer[PROTOCOL_MAX_LINE + 1];
-static uint8_t s_index;
-
-void protocol_init(void) {
-    s_index = 0;
-    s_buffer[0] = '\0';
-}
+void protocol_init(void);
 
 /*
  * Alimenta el parser byte a byte, tal como van llegando del Serial/HM10.
