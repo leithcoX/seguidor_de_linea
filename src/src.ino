@@ -19,6 +19,10 @@ void mysetup();
 #include "v_3_seguidor.h"
 #endif 
 
+#ifdef __TEST_P__
+#include "test_protocol.h"
+#endif
+
 #ifdef __TEST_S__
 #include "test_sensores.h"
 #endif 
